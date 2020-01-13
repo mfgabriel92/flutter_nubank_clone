@@ -9,7 +9,10 @@ class CardsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return ConstrainedBox(
+      constraints: BoxConstraints(
+        maxHeight: 420.0,
+      ),
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: <Widget>[
@@ -24,7 +27,7 @@ class CardsList extends StatelessWidget {
             ),
           ),
           Container(
-            height: 15.0,
+            height: 18.0,
             child: DotsIndicator(controller: _pageController),
           ),
         ],

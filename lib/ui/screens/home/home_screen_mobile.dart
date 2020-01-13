@@ -18,11 +18,13 @@ class _HomeScreenMobilePortraitState extends State<HomeScreenMobilePortrait> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          Flexible(child: UserName()),
+          UserName(),
           SizedBox(height: 16.0),
-          Flexible(flex: 3, child: CardsList()),
+          Flexible(flex: 2, child: CardsList()),
           SizedBox(height: 16.0),
-          Flexible(child: ActionsList()),
+          Flexible(
+            child: ActionsList(),
+          ),
         ],
       ),
     );
